@@ -1,37 +1,54 @@
+/* ===== BASE ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 20px;
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  margin: 20px;
   text-align: center;
   background-color: #dfd7d7;
   color: #333;
 }
 
+/* ===== HEADER ===== */
 header {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
   text-align: center;
   border-bottom: 2px solid #664bd1;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
 }
 
 h1 {
+  margin: 0 0 10px;
   color: #664bd1;
 }
 
 h2 {
+  margin: 20px 0 10px;
   color: #36152b;
 }
 
 article h3 {
+  margin: 15px 0 5px;
   font-style: italic;
   color: #0cd767;
 }
 
+/* ===== CONTENT ===== */
 section {
   margin-bottom: 20px;
 }
 
+p {
+  margin: 10px 0;
+}
+
 ul {
+  padding-left: 20px;
   list-style-type: square;
 }
 
@@ -39,27 +56,34 @@ li {
   margin: 5px 0;
 }
 
-nav a {
+/* ===== LINKS ===== */
+a {
+  color: #9a151b;
   text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #664bd1;
+}
+
+nav a {
   color: #336699;
 }
 
-a {
-  color: #9a151b;
+/* ===== MEDIA ===== */
+img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
 }
 
-p {
-  margin: 10px 0;
-}
-
+/* ===== FOOTER ===== */
 footer {
-  text-align: center;
+  margin-top: 40px;
   font-size: 14px;
   color: #777;
-  margin-top: 40px;
+  text-align: center;
 }
 
-img {
-  max-width:250px;
-  border-radius: 100%;
-}
